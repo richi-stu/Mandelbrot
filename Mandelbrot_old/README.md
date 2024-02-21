@@ -1,6 +1,8 @@
 # Mandelbrot-PVS
 Darstellung vom Mandelbrot via verteilter Berechnung
 
+Dieses Projekt stammt aus dem Modul _Programmierung verteilte Systeme_ und wurde zusammen mit AxdeExpe entwickelt.
+
 Client: src/Client/Mandebrot_Client/src
 
 Server: src/Server/Mandebrot_Server/src
