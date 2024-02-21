@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/Client/Client.iml" filepath="$PROJECT_DIR$/src/Client/Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/Server/Mandebrot_Server/Mandebrot_Server.iml" filepath="$PROJECT_DIR$/src/Server/Mandebrot_Server/Mandebrot_Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mandelbrot-PVS.iml" filepath="$PROJECT_DIR$/.idea/Mandelbrot-PVS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/Client/Test_Client/Test_Client.iml" filepath="$PROJECT_DIR$/src/Client/Test_Client/Test_Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/Server/Test_Server/Test_Server.iml" filepath="$PROJECT_DIR$/src/Server/Test_Server/Test_Server.iml" />
+    </modules>
+  </component>
+</project>

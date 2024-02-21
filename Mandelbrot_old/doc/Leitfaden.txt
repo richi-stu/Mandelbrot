@@ -1,0 +1,37 @@
+
+Issue 1: - Mandelbrot Berechnung mit threading implementieren
+
+offene Frage: - Wie viel Clients werden im Test genutzt?
+
+
+
+Server: - Hochfahren
+	- Konsolenparamter entgegen nehmen
+	- Auf Clients warten
+	
+
+Clients: - Anmelden auf Server (Datenpaket: [Anzahl an verfügbaren Threads])
+	 - warten auf Befehle
+
+
+Server: - Clients jeweils eine ID geben 
+	- Bildausschnittswerte werden berechnet
+	- Anzahl (Threads) Bildausschnittswerte senden
+	- --> Datenpaket = [screen width, screen height, xmin, xmax, ymin, ymax]
+	
+Client: - Bildberechnung aufteilen
+	- berechnet
+	- sendet pro Thread ein Bild zurück (Datenpaket: [Nummer des Bildes, Bild])
+
+// Bild kommt an, pro Bild neuer Server Thread
+
+Server: - nimmt Bild entgegen
+	- schreib Bild-ID in Array
+	- gibt nächsten Bildausschnittswerte an Client
+	
+// Thread abgebaut
+	
+Server:	- checkt Array auf das nachfolgende Bild
+	- (Ja:) gibt Bild auf Bildschirm aus
+	- (Nein:) sleep
+	- --> Interrupt von neu erzeugtem Thread
